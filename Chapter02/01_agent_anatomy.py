@@ -27,7 +27,7 @@ class Agent:
         self.total_reward = 0.0
 
     def step(self, env: Environment):
-        current_obs = env.get_observation()
+        current_obs = env.get_observation()//这个变量是没有用的
         actions = env.get_actions()
         reward = env.action(random.choice(actions))
         self.total_reward += reward
